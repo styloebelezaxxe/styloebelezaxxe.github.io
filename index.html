@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Stylo e Beleza - Salão de beleza e loja de roupas em Santa Catarina">
+    <meta name="keywords" content="salão de beleza, loja de roupas, corte de cabelo, tratamento capilar, moda">
+    <meta name="author" content="Sandra Padilha">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Stylo e Beleza - Sandra Padilha">
+    <meta property="og:description" content="Seu estilo, nossa paixão">
+    <meta property="og:type" content="website">
+
+    <title>Stylo e Beleza - Salão e Loja</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navegação -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/icon.png" alt="Stylo e Beleza" class="logo-icon" onerror="this.style.display='none'">
+                    <span class="logo-text">Stylo e Beleza</span>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link">Início</a></li>
+                        <li><a href="#about" class="nav-link">Sobre</a></li>
+                        <li><a href="#services" class="nav-link">Serviços</a></li>
+                        <li><a href="#store" class="nav-link">Loja</a></li>
+                        <li><a href="#gallery" class="nav-link">Galeria</a></li>
+                        <li><a href="#contact" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Stylo e Beleza</h1>
+                <p class="hero-subtitle">Seu estilo, nossa paixão</p>
+                <p class="hero-description">Transforme sua beleza e renove seu guarda-roupa em um só lugar</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5549998005381" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Agendar Horário
+                    </a>
+                    <a href="#services" class="btn btn-secondary">Ver Serviços</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Nós</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Bem-vindo ao <strong>Stylo e Beleza</strong>, onde unimos o melhor da beleza e moda em um único lugar. Comandado por <strong>Sandra Padilha</strong>, oferecemos serviços de salão de beleza de alta qualidade e uma seleção exclusiva de roupas para toda a família.</p>
+                    <p>Nossa missão é realçar sua beleza natural e proporcionar peças de vestuário que expressam seu estilo único. Com anos de experiência e dedicação, transformamos cada visita em uma experiência inesquecível.</p>
+                    <p>Seja para um tratamento capilar profissional ou para renovar seu guarda-roupa, estamos aqui para você!</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="Sobre Stylo e Beleza" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='%238B5CF6'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='24' fill='white'%3EStylo e Beleza%3C/text%3E%3C/svg%3E'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Serviços do Salão</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Tratamentos profissionais para realçar sua beleza</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="service-title">Tratamentos Capilares</h3>
+                    <p class="service-description">Revitalize seus cabelos com nossos tratamentos profissionais e produtos de alta qualidade.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3 class="service-title">Alisamento e Relaxamento</h3>
+                    <p class="service-description">Cabelos lisos e disciplinados com as técnicas mais modernas e seguras do mercado.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="service-title">Corte de Cabelo</h3>
+                    <p class="service-description">Cortes personalizados que realçam sua beleza e personalidade única.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="service-title">Escova e Penteado</h3>
+                    <p class="service-description">Finalizações perfeitas para qualquer ocasião especial ou do dia a dia.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-scissors"></i>
+                    </div>
+                    <h3 class="service-title">Corte de Volume</h3>
+                    <p class="service-description">Técnicas especializadas para dar vida, movimento e volume aos seus cabelos.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">Coloração e Mechas</h3>
+                    <p class="service-description">Cores vibrantes e mechas modernas com produtos de primeira linha.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Store Section -->
+    <section class="section store" id="store">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossa Loja de Roupas</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Moda para toda a família com estilo e qualidade</p>
+            </div>
+            <div class="store-grid">
+                <div class="store-card">
+                    <div class="store-image">
+                        <img src="images/mens-clothing.jpg" alt="Roupas Masculinas" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%238B5CF6'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='20' fill='white'%3ERoupas Masculinas%3C/text%3E%3C/svg%3E'">
+                        <div class="store-overlay">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                    </div>
+                    <div class="store-content">
+                        <h3 class="store-title">Roupas Masculinas</h3>
+                        <p class="store-description">Moda masculina com estilo, conforto e sofisticação para todas as ocasiões.</p>
+                    </div>
+                </div>
+
+                <div class="store-card">
+                    <div class="store-image">
+                        <img src="images/womens-clothing.jpg" alt="Roupas Femininas" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23EC4899'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='20' fill='white'%3ERoupas Femininas%3C/text%3E%3C/svg%3E'">
+                        <div class="store-overlay">
+                            <i class="fas fa-female"></i>
+                        </div>
+                    </div>
+                    <div class="store-content">
+                        <h3 class="store-title">Roupas Femininas</h3>
+                        <p class="store-description">Peças elegantes e modernas para você se sentir linda e confiante todos os dias.</p>
+                    </div>
+                </div>
+
+                <div class="store-card">
+                    <div class="store-image">
+                        <img src="images/kids-clothing.jpg" alt="Roupas Infantis" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300'%3E%3Crect width='400' height='300' fill='%23F59E0B'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='20' fill='white'%3ERoupas Infantis%3C/text%3E%3C/svg%3E'">
+                        <div class="store-overlay">
+                            <i class="fas fa-child"></i>
+                        </div>
+                    </div>
+                    <div class="store-content">
+                        <h3 class="store-title">Roupas Infantis</h3>
+                        <p class="store-description">Moda infantil confortável, divertida e cheia de estilo para os pequenos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galeria</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Confira alguns dos nossos trabalhos e produtos</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- ==================== ADICIONE NOVOS CARDS AQUI ==================== -->
+                <!-- Para adicionar uma nova imagem na galeria:
+                     1. Copie todo o bloco <div class="gallery-item">...</div> abaixo
+                     2. Cole logo após este comentário
+                     3. Altere o número da imagem (gallery1.jpg, gallery2.jpg, etc.)
+                     4. Mantenha a mesma estrutura
+                     Exemplo de bloco para copiar: -->
+
+                <div class="gallery-item" data-index="0">
+                    <img src="images/gallery1.jpg" alt="Trabalho 1" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='%238B5CF6'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='white'%3EGaleria 1%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-index="1">
+                    <img src="images/gallery2.jpg" alt="Trabalho 2" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='%23EC4899'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='white'%3EGaleria 2%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-index="2">
+                    <img src="images/gallery3.jpg" alt="Trabalho 3" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='%23F59E0B'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='white'%3EGaleria 3%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-index="3">
+                    <img src="images/gallery4.jpg" alt="Trabalho 4" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='%2310B981'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='white'%3EGaleria 4%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-index="4">
+                    <img src="images/gallery5.jpg" alt="Trabalho 5" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='%236D28D9'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='white'%3EGaleria 5%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-index="5">
+                    <img src="images/gallery6.jpg" alt="Trabalho 6" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='%23BE185D'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='white'%3EGaleria 6%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-index="6">
+                    <img src="images/gallery7.jpg" alt="Trabalho 7" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='%23D97706'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='white'%3EGaleria 7%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-index="7">
+                    <img src="images/gallery8.jpg" alt="Trabalho 8" onerror="this.src='data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400'%3E%3Crect width='400' height='400' fill='%233B82F6'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='16' fill='white'%3EGaleria 8%3C/text%3E%3C/svg%3E'">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <!-- ==================== FIM DA ÁREA DE GALERIA ==================== -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Estamos prontos para atendê-lo</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/5549998005381" target="_blank">(49) 99800-5381</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Facebook</h4>
+                            <a href="https://facebook.com/styloebelezaxxe" target="_blank">@styloebelezaxxe</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Instagram</h4>
+                            <a href="https://instagram.com/sty_loebeleza" target="_blank">@sty_loebeleza</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h3>Siga-nos nas redes sociais</h3>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/styloebelezaxxe" target="_blank" class="social-icon facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/sty_loebeleza" target="_blank" class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5549998005381" target="_blank" class="social-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/icon.png" alt="Stylo e Beleza" class="footer-icon" onerror="this.style.display='none'">
+                        <span class="footer-brand">Stylo e Beleza</span>
+                    </div>
+                    <p class="footer-description">Salão de beleza e loja de roupas oferecendo serviços premium e moda para toda a família.</p>
+                    <p class="footer-owner"><strong>Sandra Padilha</strong></p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#store">Loja</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <a href="https://wa.me/5549998005381" target="_blank">(49) 99800-5381</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-facebook"></i>
+                            <a href="https://facebook.com/styloebelezaxxe" target="_blank">@styloebelezaxxe</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                            <a href="https://instagram.com/sty_loebeleza" target="_blank">@sty_loebeleza</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-title">Redes Sociais</h4>
+                    <div class="footer-social">
+                        <a href="https://facebook.com/styloebelezaxxe" target="_blank" class="footer-social-icon facebook" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/sty_loebeleza" target="_blank" class="footer-social-icon instagram" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/5549998005381" target="_blank" class="footer-social-icon whatsapp" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Stylo e Beleza - Sandra Padilha. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5549998005381" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="Anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" id="lightboxNext" aria-label="Próxima">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="Gallery Image" id="lightboxImage">
+            <div class="lightbox-counter" id="lightboxCounter"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
