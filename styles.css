@@ -1,7 +1,6 @@
 /* ====================================
    Stylo e Beleza - Stylesheet
-   Versão: 1.0
-   Autor: Stylo e Beleza Team
+   Versão: 1.1 - Hero Centralizado
    ==================================== */
 
 /* ========== CSS VARIABLES ========== */
@@ -276,16 +275,14 @@ button {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* ========== HERO SECTION ========== */
+/* ========== HERO SECTION - CENTRALIZADO ========== */
 .hero {
   position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
-  margin-top: var(--header-height);
   padding: var(--spacing-2xl) var(--spacing-sm);
 }
 
@@ -298,11 +295,20 @@ button {
   background-color: var(--bg-overlay);
 }
 
-.hero-content {
+.hero .container {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - var(--header-height) - var(--spacing-2xl) * 2);
+}
+
+.hero-content {
+  text-align: center;
   color: #FFFFFF;
   max-width: 800px;
+  width: 100%;
 }
 
 .hero-title {
